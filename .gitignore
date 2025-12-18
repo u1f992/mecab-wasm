@@ -3,6 +3,8 @@ mecab-wasm.zip
 *.o
 *.lo
 *.la
+*~
+autom4te.cache/
 
 mecab/**/Makefile
 mecab/**/Makefile.msvc
@@ -22,6 +24,7 @@ mecab/mecabrc
 mecab/mecab.iss
 mecab/mecab-config
 mecab/a.wasm
+mecab/a.out.*
 
 mecab-ipadict/dist
 mecab-ipadict/Makefile

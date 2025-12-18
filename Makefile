@@ -4,7 +4,7 @@ PRODUCTS := lib/libmecab.js lib/libmecab.data lib/libmecab.wasm
 all: $(PRODUCTS)
 
 mecab/src/.libs/libmecab.so:
-	cd mecab && emconfigure ./configure && emmake make -j9
+	cd mecab && emconfigure ./configure && emmake make -j9 CXXFLAGS="-std=c++14"
 
 mecab-ipadict/dist/sys.dic:
 	cd mecab-ipadict && ./configure --with-dicdir=$$PWD/dist && make && /usr/lib/mecab/mecab-dict-index -f euc-jp -t utf-8 && make install

@@ -1,5 +1,5 @@
 {
-  "name": "mecab-wasm",
+  "name": "@u1f992/mecab-wasm",
   "version": "1.0.2",
   "description": "Morphological analyzer for Japanese",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itayperl/mecab-wasm.git"
+    "url": "git+https://github.com/u1f992/mecab-wasm.git"
   },
   "keywords": [
     "japanese",
@@ -16,7 +16,7 @@
   "author": "Itay Perl",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/itayperl/mecab-wasm/issues"
+    "url": "https://github.com/u1f992/mecab-wasm/issues"
   },
   "files": [
     "lib/libmecab.data",
@@ -32,5 +32,5 @@
     ".": "./lib/mecab.js",
     "./lib/*": "./lib/*"
   },
-  "homepage": "https://github.com/itayperl/mecab-wasm"
+  "homepage": "https://github.com/u1f992/mecab-wasm"
 }

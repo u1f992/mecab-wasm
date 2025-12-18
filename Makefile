@@ -13,3 +13,7 @@ mecab/mecab-ipadic/dist/sys.dic:
 
 $(PRODUCTS): mecab/mecab/src/.libs/libmecab.so mecab/mecab-ipadic/dist/sys.dic build_js.sh
 	@bash -x ./build_js.sh
+
+.PHONY: clean-submodule
+clean-submodule:
+	cd mecab && git checkout -- . && git clean -fdx

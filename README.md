@@ -20,6 +20,7 @@ A devcontainer configuration is provided in `.devcontainer/` with all required d
 ## Release Process
 
 ```bash
+make clean-submodule  # npm version requires clean git state
 npm version patch  # or minor, major
 npm publish
 ```

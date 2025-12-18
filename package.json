@@ -26,6 +26,11 @@
     "LICENSE.mecab",
     "LICENSE.mecab-ipadict"
   ],
-  "exports": [ "lib/mecab.js" ],
+  "main": "./lib/mecab.js",
+  "type": "module",
+  "exports": {
+    ".": "./lib/mecab.js",
+    "./lib/*": "./lib/*"
+  },
   "homepage": "https://github.com/itayperl/mecab-wasm"
 }
